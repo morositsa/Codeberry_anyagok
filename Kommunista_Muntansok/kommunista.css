@@ -1,0 +1,113 @@
+body {
+  margin-top: 0px;
+  display: flex;
+  
+}
+
+.fejdiv {
+  margin-bottom: 1rem;
+}
+
+h1{
+  font-style: italic;
+}
+
+.fejp {
+  margin-bottom: 0px;
+}
+
+h1 {
+  
+}
+
+table {
+  float: right;
+  width: 20em;
+}
+
+th {
+  font-style: italic;
+  text-align: center;
+}
+
+.kep {
+  font-style: normal;
+  text-align: center;
+}
+
+.commiemutants {
+  width: 182px;
+  border: 1px solid;
+  padding: 2px;
+  margin-right: 12px;
+  background-color:#f8f9fa;
+  float: left;
+}
+
+.uto {
+  list-style-type: none;
+}
+
+.lis{
+  display: inline;
+
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:hover{
+  text-decoration-line: underline;
+}
+
+.tartjegy {
+  float:inherit;
+  border: 1px solid;
+  border-color: #a2a9b1;
+  background-color:#f8f9fa;
+  width: 190px;
+  padding-left: 3px;
+}
+
+.adatlap {
+  border: 1px solid;
+  margin: 3px;
+}
+
+.commieCont {
+  display: inline;
+}
+
+h2 {
+  display: inline;
+}
+
+h3 {
+  display: inline;
+}
+
+figure {
+  margin: 0;
+}
+
+.vizszintesLista {
+  border: 1px solid;
+  border-color: #a2a9b1;
+  background-color:#f8f9fa; 
+}
+
+
+
+.borderX, .border {
+  display: inline;
+  padding: 5px;
+}
+
+.border {
+  border-left: 1px solid;
+}

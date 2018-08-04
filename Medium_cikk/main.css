@@ -1,0 +1,45 @@
+body{              /*Minden elemre vonatkozik*/
+  margin: 0;
+}
+
+h1,figcaption {    /*A közös szabályokat rakhatjuk egy helyre is, a késöbbi felülírja az előzőeket!*/
+  text-align: center;
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif; /*A fontokat sorrendben próbálja betölteni, de lehet külső hivatkozás is.*/
+}
+
+h1 {               /*Minden elemnek a megjelenését szabályozhatjuk.*/
+  color: rgba(0,0,0,.8);
+  font-size: 36px;
+}
+
+img {
+  height:auto;     /*A kép magassága automata, így a kép oldalaránya megmarad.*/ 
+  width:100%;      /*a kép mindig kitölti a vízszintes helyet.*/
+}
+
+figcaption{
+  font-size: 11px;
+}
+
+article {
+  margin-left: auto;
+  margin-right: auto;
+  max-width:700px; /*A cikk szélessége korlátozva, a margók oldalról mindig egyformák, így középre kerül.*/
+  padding:10px;    /*A 'margin: 0;' miatt a  legszélén kezdődne minden.*/
+}
+
+p {
+  color: rgba(0,0,0,0.8);
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  font-size: 21px; /*A bekezdések beállítása csökkentett betüközzel, növelt sorközzel.*/
+  letter-spacing: -.003em;
+  line-height: 1.58;
+}
+
+a {                /*A linkek színét adja meg.*/
+  color: rgba(0,0,0,0.8);
+}
+
+a:hover {          /*Majd átszínezi mikor rámutatunk.*/
+  color: rgba(253,53,53,1);
+}

@@ -1,0 +1,60 @@
+body{              /*Álltalános beállítások, feladatban adott némelyik*/
+  background-color:hsla(0, 0%, 50%, .7);
+  width:500px;
+  margin: 0 auto;
+  padding:15px auto;/*Felső-alsó margó 15px, jobb-bal autó:középen lesz*/
+  box-sizing: border-box;
+  letter-spacing: .013em;
+  font-family: 'Raleway', sans-serif;/*Adott*/
+  color:#999;      /*Adott*/
+  background-color:#444;/*Adott*/
+}
+
+h1{
+  background-color:rgba(50,50,50,.8);
+  margin-top:-44px;/*Felmozgatjuk a képre*/
+  width: 500px;    /*A kép szélességéhez igazítjuk*/
+  filter: grayscale(10%);
+  color:white;
+  text-align:center;
+  font-size:30px;
+}
+
+h2 {
+  color:white;
+  font-size:27px;
+}
+
+.lead{
+  background-color:yellow;
+  border-radius: 4px;
+  width:410px;
+  padding:15px;
+  margin:15px auto;
+  font-size:19px;
+  color: darkslategray;
+}
+
+table{
+  width:480px;
+  text-align: center;
+  border-collapse: collapse;
+  
+}
+th{
+  background-color:gray;
+}
+table, th, td, caption {
+  border: 1px solid grey;
+  height:30px;  
+}
+caption{
+  text-transform: uppercase;
+  font-size:14px;
+  padding:5px;
+  height:18px;
+}
+
+footer {
+  text-align: center;
+}
