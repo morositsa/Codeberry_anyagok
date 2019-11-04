@@ -1,23 +1,19 @@
-/*Nem éppen szép megoldás, de nagyrészt mûködik és legnagyobb rész sajátkútfõ. MA*/
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /*kitölti a képernyot*/
 }
-body {
+body {               /*Általános beállítások*/
   color: #444349;
   font-family:'Muli',sans-serif;
   font-size:1.15rem;
+  background:url('assets/wedding-landing-background.png') repeat center;  /*Háttér*/
 }
 a {
-  text-decoration:none;
+  text-decoration:none;/*linkek stylusa*/
   color:#bd806e;
 }
-main{
-  background:url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;  
-}
-/*Fejléc, bejelentkezõ kép*/
 
-.fejlec{
-  background:url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover ;
+.fejlec{             /*Fejléc, bejelentkezõ kép*/
+  background:url('assets/wedding-landing-cover.jpg') no-repeat 70% center/cover ;
   display:table;  /*megszûnik block elemnek lenni, nem tölti ki az ablakot, azért kell, hogy táblázatként kezelje, és így függölegesen is lehessen pozícionálni*/
   background-size:cover; /*körbevágás*/
   height:100vh; /*magasság, hogy kitöltse az ablakot magasságban*/
@@ -68,25 +64,8 @@ main{
   width:1.5rem; /*szélessége*/
   margin:0.5rem;
 }
-@media (min-width: 768px) {
-  .fejlec{
-    background:url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover ;
 
-  }
-  .betet{
-    width:50%
-  } 
-  .udv{
-    text-transform: uppercase;
-  }
-  .nev{
-    font-size:7rem;
-  }
-}
-
-/*Fontos adatok*/
-
-.helyek{
+.helyek{             /*Fontos adatok*/
   width:100%;  /*hogy mégiscsak kitöltse a szélességet*/
   text-align:center;
   padding:1.5rem;
@@ -100,7 +79,6 @@ h2{
   font-size:3rem;
   margin-bottom:1.5rem;
   text-align:center;
-
 }
 h3{
   font-family:'Libre Baskerville',serif;
@@ -121,17 +99,8 @@ h3{
   width:12.515625rem; /*szélessége*/
   margin:.5rem auto; /*margó*/
 }
-@media (min-width: 768px) {
-  .kiskepek{
-    display:inline-block;
-    width:30%;
-    padding:.5rem 1rem;
-    margin:1.5rem auto;
-  }
-}
-/*idõbeosztás*/
 
-.program{
+.program{            /*idõbeosztás*/
   background: hsla(100,0%,0%,.6);
   padding:1rem;
   color:#d2ba87;
@@ -144,17 +113,10 @@ h3{
 .program div{
   margin-bottom:1rem;
 }
-@media (min-width: 768px) {
-  .program-betet{
-    margin-left:35%;
-    margin-right:35%;  
-  }
-}
-/*Ajándékok*/
-.ajandek{
+
+.ajandek{            /*Ajándékok*/
   margin:1.5rem;
   text-align:center;
-  
 }
 .ajandek div{
   margin:1rem;
@@ -162,8 +124,8 @@ h3{
 .ajandek img{
    height:7.5rem;
 }
-/*Kérdések*/
-.kerdes{
+
+.kerdes{             /*Kérdések*/
   background: hsla(100,0%,0%,.6);
   padding:1.5rem;
   color:#d2ba87;
@@ -176,25 +138,6 @@ h3{
 }
 .valaszp{
   margin-bottom: 1.5rem;
-}
-@media (max-width: 768px){
-  .kerdes-betet::after{
-    display:block; /*bekerülés*/
-    content:"";  /*szöveg nélkül!*/
-    background-color:#d2ba87; /*vonal színe*/
-    height:2px; /*magassága*/
-    width:12.515625rem; /*szélessége*/
-    margin:.5rem auto; /*margó*/
-  }
-}
-@media (min-width: 768px){
-  .kerdes-betet {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    padding: 1.5rem;
-    margin: .5rem;
-  }
 }
 .kapcsolat{
   text-align:center;
@@ -216,4 +159,47 @@ fotter{
   display: table-cell;
   vertical-align: middle;
   padding: .5rem 1rem;
+}
+
+/*Responziv beállítások*/
+@media (min-width: 768px) {  /*Ha szélesebb*/
+  .fejlec{
+    background:url('assets/wedding-landing-cover.jpg') no-repeat center/cover ;
+  }
+  .betet{
+    width:50%
+  } 
+  .udv{
+    text-transform: uppercase;
+  }
+  .nev{
+    font-size:7rem;
+  }
+  .kiskepek{
+    display:inline-block;
+    width:30%;
+    padding:.5rem 1rem;
+    margin:1.5rem auto;
+  }
+  .program-betet{
+    margin-left:40%;
+  }
+  .kerdes-betet {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+}
+
+@media (max-width: 768px){   /*Ha keskenyebb*/
+  .kerdes-betet::after{      /*Húzunk egy vonalat minden betét után*/
+    display:block; /*bekerülés*/
+    content:"";  /*szöveg nélkül!*/
+    background-color:#d2ba87; /*vonal színe*/
+    height:2px; /*magassága*/
+    width:12.515625rem; /*szélessége*/
+    margin:.5rem auto; /*margó*/
+  }
 }

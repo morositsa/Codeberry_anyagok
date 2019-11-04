@@ -1,0 +1,90 @@
+#canvas {                            /*id azonosító*/
+  width: 400px;                      /*fix szélesség*/
+  height: 400px;
+  background-color: ivory;
+  margin: 0 auto;
+  box-shadow: 15px 15px 10px  gray
+}
+#first-row {
+  width: 100%;
+  height: 75%;
+}
+#second-row {
+  width: 100%;
+  height: 3%;
+}
+#third-row {
+  width: 100%;
+  height: 22%;
+}
+#big-rectangle {
+  width: 75%;
+  height: 100%;
+}
+#first-divider {
+  width:3%;
+  height:100%;
+}
+#first-column {
+  width:22%;
+  height:100%
+}
+#first-medium-rectangle {
+  width:100%;
+  height:48.5%;
+}
+#second-divider {
+  width:100%;
+  height:3%;
+}
+#second-medium-rectangle {
+  width:100%;
+  height:48.5%;
+}
+#last-column {
+  width:5%;
+  height:100%;
+}
+#first-white {
+  width:100%;
+  height:47.5%;
+}
+#third-divider {
+  width:100%;
+  height:5%;
+}
+#first-yellow {
+  width:100%;
+  height:47.5%;
+}
+#fourth-divider {
+  width:3%;
+  height:100%;
+}
+#feher {
+  width:67%;
+  height:100%;
+}
+#fifth-divider {
+  width:3%;
+  height:100%;
+}
+#kek {
+  width:22%;
+  height:100%;
+}
+.red {
+  background-color: red;
+}
+.black {
+  background-color: black;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+.right {
+  float: right;
+}

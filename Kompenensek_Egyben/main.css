@@ -1,0 +1,240 @@
+/* ==== GENERAL STYLES ==== */
+* {
+  box-sizing: border-box;
+}
+html { /*Az egész html-t használjuk konténerként*/
+/*  min-height: 100%;
+  position: relative;*/
+}
+
+.content {
+  min-height: calc(100vh - 84px);
+}
+
+/*Fejléc formázás*/
+.fejlec {
+  font-size: 0;
+}
+nav ul {
+  background-color: #eee;
+  text-align: center;
+}
+nav li {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+nav a {
+  text-decoration: none;
+  color: #C74F78;
+  display: block;
+}
+nav a:hover {
+  background-color: #fff;
+  transition: background-color .3s ease-in-out;
+}
+nav a.active {
+  background-color: #c74f78;
+  color: #eee;
+}
+@media (min-width: 600px) {
+  nav li {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }
+}
+
+/*Tartalom formázása*/
+
+.Tartalom{
+  margin-left: 1rem;
+  margin-right: 1rem;  
+}
+h3{
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 10px;  
+}
+/* The base of every button */
+.btn, .btn2 {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: #fff;
+}
+.btn2{
+  transition: 0.15s ease-in-out;
+}
+/* Additional styles for buttons*/
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-primary {
+  background-color:#337ab7;
+  border-color:#2e6da4;
+}
+.btn-primary:hover {
+  background-color:#286090;
+  border-color:#204d74;
+}
+.btn-success {
+  background-color:#5cb85c;
+  border-color:#4cae4c;
+}
+.btn-success:hover {
+  background-color:#449d44;
+  border-color:#398439;
+}
+.btn-info {
+  background-color:#5bc0de;
+  border-color:#46b8da;
+}
+.btn-info:hover {
+  background-color:#31b0d5;
+  border-color:#269abc;
+}
+.btn-warning {
+  background-color:#f0ad4e;
+  border-color:#eea236;
+}
+.btn-warning:hover {
+  background-color:#ec971f;
+  border-color:#d58512;
+}
+.btn-danger {
+  background-color:#d9534f;
+  border-color:#d43f3a;
+}
+.btn-danger:hover {
+  background-color:#c9302c;
+  border-color:#ac2925;
+}
+
+
+.btn2-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn2-default:hover {
+  background-color: #333;
+  color: #fff;
+}
+.btn2-primary {
+  background-color:#337ab7;
+  border-color:#2e6da4;
+}
+.btn2-primary:hover {
+  background-color:#fff;
+  color:#337ab7;
+}
+.btn2-success {
+  background-color:#5cb85c;
+  border-color:#4cae4c;
+}
+.btn2-success:hover {
+  background-color:#fff;
+  color:#5cb85c;
+}
+.btn2-info {
+  background-color:#5bc0de;
+  border-color:#46b8da;
+}
+.btn2-info:hover {
+  background-color:#fff;
+  color:#5bc0de;
+}
+.btn2-warning {
+  background-color:#f0ad4e;
+  border-color:#eea236;
+}
+.btn2-warning:hover {
+  background-color:#fff;
+  color:#f0ad4e;
+}
+.btn2-danger {
+  background-color:#d9534f;
+  border-color:#d43f3a;
+}
+.btn2-danger:hover {
+  background-color:#fff;
+  color:#d9534f;
+}
+
+.btn3 {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.42857143;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: #000;
+  background-color: #fff;
+  border-color: red;
+  transition: 0.15s ease-in-out;
+}
+.btn3:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/*Lábléc formázás*/
+footer {
+  background-color: black;
+  display: table; /*középre igazítás-1  táblázat*/
+  width: 100vw; /*középre igazítás-2  teljes szélesség*/
+  height: 8rem; /*magasság méret rem:relatív az alaphoz képest*/
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Arial', sans-serif;
+  font-size: .875rem;
+  height: 84px;
+}
+.wrapper {
+  display: table-cell; /*középre igazítás-3 egy cella legyen*/
+  vertical-align: middle;  /*középre igazítás-4  melyet függőlegesen középre*/
+}
+footer small {
+  color: #ccc;
+  letter-spacing: .025rem; /*betü köz*/
+  margin-bottom: 1.5rem; /*margó az elemek között*/
+  display: block;
+}
+.footer-nav a {
+  text-decoration: none; /*aláhúzás eltüntetés*/
+  color: #c74f78;
+  margin: 0 .5rem;
+  display: inline-block;
+}
+.footer-nav a:hover {
+  color: #f26896;
+  transition: color .15s ease-in-out;
+}
+strong {
+  font-weight: 700;
+}
